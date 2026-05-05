@@ -27,7 +27,7 @@
             background: rgba(255, 204, 0, 0.03);
         }
 
-        img { transition: opacity 0.3s ease; }
+        img { transition: transform 0.5s ease, opacity 0.3s ease; }
     </style>
 </head>
 <body class="bg-dark text-white overflow-x-hidden">
@@ -175,45 +175,98 @@
                         <h3 class="text-4xl md:text-5xl font-black mb-6 leading-tight tracking-tighter">WR Business Creative <br>Official Landing Page</h3>
                         <p class="text-zinc-400 text-lg mb-10 leading-relaxed">Perancangan landing page resmi untuk menunjukkan standar visual dan teknis kami kepada calon klien UMKM.</p>
                         <div class="flex flex-wrap gap-3">
-                            <span class="px-6 py-2 bg-yellow/10 text-yellow rounded-xl text-xs font-black border border-yellow/20 uppercase">UI/UX</span>
-                            <span class="px-6 py-2 bg-yellow/10 text-yellow rounded-xl text-xs font-black border border-yellow/20 uppercase">Development</span>
+                            <span class="px-6 py-2 bg-yellow/10 text-yellow rounded-xl text-xs font-black border border-yellow/20 uppercase tracking-widest">UI/UX</span>
+                            <span class="px-6 py-2 bg-yellow/10 text-yellow rounded-xl text-xs font-black border border-yellow/20 uppercase tracking-widest">Development</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Portfolio Wills Indonesia (DENGAN LOGO BULAT SESUAI PERMINTAAN) -->
+                <!-- 2. Portfolio Wills Indonesia (DENGAN KOTAK IMMERSIVE & GALLERY DESAIN) -->
                 <div class="relative group overflow-hidden rounded-[3.5rem] shadow-2xl border border-zinc-800 transform hover:scale-[1.01] transition-all duration-500">
-                    <!-- Background Merah Immersive -->
                     <div class="absolute inset-0 bg-[#8B0000] z-0"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent z-10"></div>
                     
-                    <div class="relative z-20 grid lg:grid-cols-2 items-center">
-                        <!-- Content Sisi Kiri -->
-                        <div class="p-12 lg:p-24 flex flex-col justify-center text-white">
-                            <div class="flex items-center gap-3 mb-8">
-                                <span class="w-12 h-1 bg-red-500 rounded-full"></span>
-                                <span class="text-red-400 font-black text-sm uppercase tracking-widest">Client Success Story</span>
+                    <div class="relative z-20">
+                        <!-- Top Part: Content & Circular Logo -->
+                        <div class="grid lg:grid-cols-2 items-center">
+                            <div class="p-12 lg:p-20 flex flex-col justify-center text-white">
+                                <div class="flex items-center gap-3 mb-8">
+                                    <span class="w-12 h-1 bg-red-500 rounded-full shadow-[0_0_10px_rgba(255,255,255,0.3)]"></span>
+                                    <span class="text-red-300 font-black text-sm uppercase tracking-[0.2em]">Client Success Story</span>
+                                </div>
+                                <h3 class="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tighter italic">WILLS <br>INDONESIA</h3>
+                                <p class="text-red-50/80 text-xl md:text-2xl mb-12 leading-relaxed max-w-lg">
+                                    Membangun identitas digital yang berkarakter untuk brand kopi lokal di Purwakarta. Fokus pada kurasi konten visual yang konsisten dan strategis.
+                                </p>
+                                
+                                <div class="flex flex-wrap gap-4 items-center">
+                                    <a href="https://bit.ly/PesanWillsCoffe" target="_blank" class="flex items-center gap-3 bg-white text-[#8B0000] px-12 py-5 rounded-[1.5rem] font-black text-2xl hover:scale-105 transition-all shadow-2xl">
+                                        Lihat Project <i data-lucide="external-link" class="w-7 h-7"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tighter italic">WILLS <br>INDONESIA</h3>
-                            <p class="text-red-100/80 text-xl mb-12 leading-relaxed max-w-lg">
-                                Transformasi visual menyeluruh untuk brand kopi Wills Indonesia. Kami mengembangkan kurasi konten sosial media yang berkarakter, konsisten, dan menarik bagi audiens lokal.
-                            </p>
-                            
-                            <div class="flex flex-wrap gap-4 items-center">
-                                <a href="https://bit.ly/PesanWillsCoffe" target="_blank" class="flex items-center gap-3 bg-white text-[#8B0000] px-10 py-5 rounded-2xl font-black text-xl hover:bg-zinc-100 transition-all shadow-2xl">
-                                    Lihat Project <i data-lucide="external-link" class="w-6 h-6"></i>
-                                </a>
-                                <div class="flex gap-2">
-                                    <span class="px-5 py-2 bg-black/30 backdrop-blur-md text-white rounded-xl text-xs font-bold border border-white/10 uppercase tracking-widest">Branding</span>
-                                    <span class="px-5 py-2 bg-black/30 backdrop-blur-md text-white rounded-xl text-xs font-bold border border-white/10 uppercase tracking-widest">Social Media</span>
+
+                            <div class="p-12 flex items-center justify-center lg:justify-end lg:pr-24">
+                                <!-- Logo Wills Bulat Sempurna -->
+                                <div class="w-64 h-64 md:w-80 md:h-80 bg-white rounded-full flex items-center justify-center shadow-[0_0_100px_rgba(255,255,255,0.3)] overflow-hidden p-8 border-8 border-white/20 animate-float">
+                                    <img src="image_c00d76.jpg" alt="Logo Bulat Wills" class="w-full h-full object-cover rounded-full shadow-inner">
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Logo Sisi Kanan (BULAT SEMPURNA SESUAI RUANG) -->
-                        <div class="p-12 flex items-center justify-center lg:justify-end lg:pr-24">
-                            <div class="w-64 h-64 md:w-80 md:h-80 bg-white rounded-full flex items-center justify-center shadow-[0_0_80px_rgba(255,255,255,0.3)] overflow-hidden group-hover:scale-105 transition-all duration-700 p-8 border-4 border-white/20">
-                                <img src="logo.jpg" alt="Logo Wills Indonesia" class="w-full h-full object-cover rounded-full shadow-inner">
+                        <!-- Bottom Part: Gallery Showcase (Hasil Desain Kamu - Tidak Ada Duplikasi) -->
+                        <div class="px-12 lg:px-20 pb-20 mt-10">
+                            <div class="flex items-center gap-4 mb-10">
+                                <div class="p-3 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
+                                    <i data-lucide="layout-grid" class="text-white w-6 h-6"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-white font-black text-xl tracking-tight leading-none uppercase">Gallery Desain</span>
+                                    <span class="text-red-200/60 text-sm font-bold tracking-widest uppercase text-center">Visual Content Production</span>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                                <!-- Design 1 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.27.jpeg" alt="Desain Wills 1" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Product Catalog</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Coffee Bottles</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Design 2 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.26.jpeg" alt="Desain Wills 2" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Social Feed</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Latte Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Design 3 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.25.jpeg" alt="Desain Wills 3" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Promotion Content</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Daily Coffee</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Design 4 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.47.jpeg" alt="Desain Wills 4" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Menu Highlights</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Product Shot</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -226,35 +279,43 @@
     <!-- Paket Harga -->
     <section id="paket" class="py-32 px-6">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl md:text-6xl font-black mb-24">Paket Harga</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="p-10 bg-zinc-900 border border-zinc-800 rounded-[2.5rem] flex flex-col text-left">
-                    <h3 class="text-2xl font-bold mb-4">Starter</h3>
-                    <div class="text-4xl font-black text-yellow-400 mb-8">Rp350rb</div>
-                    <ul class="space-y-4 text-sm text-zinc-400 flex-grow mb-10">
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-yellow-400"></i> Logo AI + Finishing</li>
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-yellow-400"></i> 3 Desain Feed</li>
+            <h2 class="text-4xl md:text-6xl font-black mb-24 leading-none tracking-tighter">Paket Harga</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Paket Starter -->
+                <div class="p-12 bg-zinc-900 border border-zinc-800 rounded-[3rem] flex flex-col text-left hover:border-zinc-500 transition-all">
+                    <h3 class="text-2xl font-black mb-4">Starter</h3>
+                    <div class="text-5xl font-black text-yellow-400 mb-10 leading-none">Rp350rb</div>
+                    <ul class="space-y-5 text-zinc-400 flex-grow mb-12 text-base">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Logo AI + Finishing</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> 3 Desain Feed Instagram</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Warna Brand Basic</li>
                     </ul>
-                    <a href="https://wa.me/6289673769965" class="w-full py-4 border border-zinc-700 rounded-2xl text-center font-bold">Ambil Paket</a>
+                    <a href="https://wa.me/6289673769965" class="w-full py-5 border-2 border-zinc-800 rounded-2xl text-center font-black text-xl hover:bg-zinc-800 transition-all">Ambil Paket</a>
                 </div>
-                <div class="p-10 bg-zinc-900 border-2 border-yellow-400 rounded-[2.5rem] flex flex-col text-left relative scale-105">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow text-black text-[10px] font-black px-4 py-1 rounded-full uppercase">Terlaris</div>
-                    <h3 class="text-2xl font-bold mb-4">Branding</h3>
-                    <div class="text-4xl font-black text-yellow-400 mb-8">Rp1.5jt</div>
-                    <ul class="space-y-4 text-sm text-zinc-200 flex-grow mb-10">
-                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check" class="text-yellow-400"></i> Landing Page Bisnis</li>
-                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check" class="text-yellow-400"></i> 12 Desain Feed</li>
+                
+                <!-- Paket Branding (Best Seller) -->
+                <div class="p-12 bg-zinc-900 border-4 border-yellow-400 rounded-[3.5rem] flex flex-col text-left relative scale-105 shadow-2xl">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-yellow text-black text-xs font-black px-6 py-2 rounded-full uppercase tracking-widest shadow-xl text-center">Terlaris</div>
+                    <h3 class="text-2xl font-black mb-4">Branding</h3>
+                    <div class="text-5xl font-black text-yellow-400 mb-10 leading-none">Rp1.5jt</div>
+                    <ul class="space-y-5 text-zinc-200 flex-grow mb-12 text-base">
+                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Landing Page Bisnis</li>
+                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> 12 Desain Feed Premium</li>
+                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Refresh Logo Pro</li>
                     </ul>
-                    <a href="https://wa.me/6289673769965" class="w-full py-4 bg-yellow text-black rounded-2xl text-center font-black">Ambil Paket</a>
+                    <a href="https://wa.me/6289673769965" class="w-full py-5 bg-yellow text-black rounded-[2rem] text-center font-black text-2xl hover:scale-105 transition-all">Ambil Paket</a>
                 </div>
-                <div class="p-10 bg-zinc-900 border border-zinc-800 rounded-[2.5rem] flex flex-col text-left">
-                    <h3 class="text-2xl font-bold mb-4">Pro Setup</h3>
-                    <div class="text-4xl font-black text-yellow-400 mb-8">Rp2.5jt</div>
-                    <ul class="space-y-4 text-sm text-zinc-400 flex-grow mb-10">
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-yellow-400"></i> Full Business Setup</li>
-                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-yellow-400"></i> SOP Sederhana</li>
+                
+                <!-- Paket Pro -->
+                <div class="p-12 bg-zinc-900 border border-zinc-800 rounded-[3rem] flex flex-col text-left hover:border-zinc-500 transition-all">
+                    <h3 class="text-2xl font-black mb-4">Pro Setup</h3>
+                    <div class="text-5xl font-black text-yellow-400 mb-10 leading-none">Rp2.5jt</div>
+                    <ul class="space-y-5 text-zinc-400 flex-grow mb-12 text-base">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Full Business Setup</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> SOP Sederhana</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Konsultasi Bisnis</li>
                     </ul>
-                    <a href="https://wa.me/6289673769965" class="w-full py-4 border border-zinc-700 rounded-2xl text-center font-bold">Ambil Paket</a>
+                    <a href="https://wa.me/6289673769965" class="w-full py-5 border-2 border-zinc-800 rounded-2xl text-center font-black text-xl hover:bg-zinc-800 transition-all">Ambil Paket</a>
                 </div>
             </div>
         </div>
@@ -263,24 +324,36 @@
     <!-- Footer -->
     <footer class="bg-black py-32 px-6 border-t border-zinc-900 text-center">
         <div class="max-w-7xl mx-auto">
-            <img src="logo-atas.jpg" alt="WRBC Logo" class="h-20 mx-auto mb-10 object-contain">
-            <p class="text-zinc-400 text-xl max-w-sm mx-auto mb-12 font-medium">Mitra kreatif strategis untuk bisnis UMKM naik level.</p>
-            <div class="flex justify-center gap-8 mb-16 text-zinc-500">
-                <a href="https://wa.me/6289673769965" class="hover:text-yellow-400"><i data-lucide="phone"></i></a>
-                <a href="mailto:wrbisniskreatif@gmail.com" class="hover:text-yellow-400"><i data-lucide="mail"></i></a>
-                <a href="#" class="hover:text-yellow-400"><i data-lucide="instagram"></i></a>
+            <img src="logo-atas.jpg" alt="WRBC Logo" class="h-20 mx-auto mb-12 object-contain">
+            <p class="text-zinc-400 text-xl max-w-sm mx-auto mb-16 font-medium">Mitra kreatif strategis untuk bisnis UMKM naik level. Desain, Konten, & Digital Presence.</p>
+            <div class="flex justify-center gap-10 mb-20 text-zinc-600">
+                <a href="https://wa.me/6289673769965" class="hover:text-yellow-400 transition-colors"><i data-lucide="phone" class="w-8 h-8"></i></a>
+                <a href="mailto:wrbisniskreatif@gmail.com" class="hover:text-yellow-400 transition-colors"><i data-lucide="mail" class="w-8 h-8"></i></a>
+                <a href="https://instagram.com/wrbisniskreatif" class="hover:text-yellow-400 transition-colors"><i data-lucide="instagram" class="w-8 h-8"></i></a>
             </div>
-            <p class="text-xs text-zinc-800 font-bold tracking-widest uppercase">&copy; 2026 WR Business Creative.</p>
+            <p class="text-xs text-zinc-800 font-black tracking-[0.5em] uppercase text-center">&copy; 2026 WR Business Creative.</p>
         </div>
     </footer>
 
     <script>
+        // Initialize Icons
         lucide.createIcons();
+        
+        // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
-            if (window.scrollY > 50) { nav.classList.add('glass'); } 
-            else { nav.classList.remove('glass'); }
+            if (window.scrollY > 50) { 
+                nav.classList.add('glass'); 
+                nav.classList.add('py-3');
+                nav.classList.remove('py-5');
+            } else { 
+                nav.classList.remove('glass'); 
+                nav.classList.add('py-5');
+                nav.classList.remove('py-3');
+            }
         });
+        
+        // Mobile Menu Toggle
         function toggleMenu() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         }
