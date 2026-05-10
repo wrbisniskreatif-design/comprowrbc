@@ -2,933 +2,361 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>The Wedding of Wily & Ayu</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WR Business Creative - Solusi Kreatif Bisnis Naik Level</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* === CSS VARIABLES === */
-        :root {
-            --cream: #F8F1E7;
-            --beige: #EFE1D0;
-            --gold: #C9A24A;
-            --rose-gold: #B88968;
-            --maroon: #7A2E3A;
-            --burgundy: #5A1F2D;
-            --dark-brown: #2B2118;
-            --white: #FFFFFF;
-            
-            --font-heading: 'Cormorant Garamond', serif;
-            --font-body: 'Poppins', sans-serif;
-            --font-script: 'Great Vibes', cursive;
-        }
-
-        /* === RESET & BASE === */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #1a1a1a;
-            font-family: var(--font-body);
-            color: var(--dark-brown);
-            display: flex;
-            justify-content: center;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* === MOBILE CONTAINER === */
-        #app-container {
-            width: 100%;
-            max-width: 480px;
-            background-color: var(--cream);
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23C9A24A' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-            min-height: 100vh;
-            position: relative;
-            box-shadow: 0 0 30px rgba(0,0,0,0.8);
-            overflow: hidden;
-        }
-
-        @media (min-width: 481px) {
-            #app-container {
-                margin: 20px auto;
-                border-radius: 30px;
-                height: 95vh;
-                overflow-y: auto;
-                border: 8px solid #333;
-            }
-            #app-container::-webkit-scrollbar {
-                width: 6px;
-            }
-            #app-container::-webkit-scrollbar-thumb {
-                background: var(--gold);
-                border-radius: 10px;
-            }
-        }
-
-        /* === TYPOGRAPHY === */
-        h1, h2, h3, .heading-font {
-            font-family: var(--font-heading);
-            color: var(--burgundy);
-            font-weight: 600;
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .bg-dark { background-color: #0a0a0a; }
+        .text-yellow { color: #FFCC00; }
+        .bg-yellow { background-color: #FFCC00; }
         
-        .script-font {
-            font-family: var(--font-script);
-            color: var(--gold);
-            font-weight: normal;
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
         }
-
-        .text-center { text-align: center; }
-        .text-maroon { color: var(--maroon); }
-        .text-gold { color: var(--gold); }
-        .text-sm { font-size: 0.85rem; }
-        .text-xs { font-size: 0.75rem; }
-
-        /* === FLORAL DECORATIONS === */
-        .floral-corner {
-            position: absolute;
-            width: 250px;
-            height: 250px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            z-index: 5;
-            pointer-events: none;
-            opacity: 0.9;
-        }
-        .floral-top-left {
-            top: -20px; left: -20px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%237A2E3A' d='M0,0 L200,0 C150,50 100,100 50,200 L0,200 Z' opacity='0.8'/%3E%3Cpath fill='%235A1F2D' d='M0,0 L150,0 C100,50 50,100 0,150 Z'/%3E%3Ccircle cx='40' cy='40' r='20' fill='%23C9A24A' opacity='0.6'/%3E%3Cpath fill='%23EFE1D0' d='M20,20 Q60,10 80,40 Q40,60 20,20 Z'/%3E%3C/svg%3E");
-            animation: sway 6s ease-in-out infinite alternate;
-        }
-        .floral-bottom-right {
-            bottom: -20px; right: -20px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%237A2E3A' d='M200,200 L0,200 C50,150 100,100 150,0 L200,0 Z' opacity='0.8'/%3E%3Cpath fill='%235A1F2D' d='M200,200 L50,200 C100,150 150,100 200,50 Z'/%3E%3Ccircle cx='160' cy='160' r='20' fill='%23C9A24A' opacity='0.6'/%3E%3Cpath fill='%23EFE1D0' d='M180,180 Q140,190 120,160 Q160,140 180,180 Z'/%3E%3C/svg%3E");
-            animation: sway 7s ease-in-out infinite alternate-reverse;
-        }
-
-        @keyframes sway {
-            0% { transform: rotate(0deg) scale(1); }
-            100% { transform: rotate(3deg) scale(1.05); }
-        }
-
-        /* === COVER SCREEN === */
-        #cover-screen {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(to bottom, var(--cream), var(--beige));
-            z-index: 100;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            transition: opacity 1s ease, visibility 1s ease;
-        }
-        #cover-screen.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-        .cover-content {
-            text-align: center;
-            z-index: 10;
-            background: rgba(255, 255, 255, 0.6);
-            padding: 30px 20px;
-            border-radius: 20px;
-            border: 1px solid var(--gold);
-            backdrop-filter: blur(5px);
-            width: 90%;
-            box-shadow: 0 10px 30px rgba(90, 31, 45, 0.1);
-        }
-        .guest-box {
-            margin: 20px 0;
-            padding: 15px;
-            border-top: 1px solid var(--gold);
-            border-bottom: 1px solid var(--gold);
-        }
-        .btn-primary {
-            background: linear-gradient(135deg, var(--maroon), var(--burgundy));
-            color: var(--white);
-            border: 2px solid var(--gold);
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-family: var(--font-body);
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(122, 46, 58, 0.4);
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(122, 46, 58, 0.6);
-        }
-
-        /* === MAIN CONTENT SCROLL === */
-        #main-content {
-            display: none;
-            height: 100%;
-            overflow-y: auto;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-
-        /* === SECTIONS COMMON === */
-        section {
-            padding: 60px 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .card {
-            background: var(--white);
-            border-radius: 20px;
-            padding: 30px 20px;
-            width: 100%;
-            box-shadow: 0 10px 30px rgba(43, 33, 24, 0.05);
-            border: 1px solid rgba(201, 162, 74, 0.3);
-            position: relative;
-            margin-bottom: 20px;
-        }
-
-        /* === HERO SECTION === */
-        .hero-img-frame {
-            width: 220px;
-            height: 300px;
-            border-radius: 110px 110px 0 0;
-            border: 3px solid var(--gold);
-            padding: 5px;
-            margin: 0 auto 20px;
-            position: relative;
-        }
-        .hero-img-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 105px 105px 0 0;
-        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
         
-        .countdown-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .countdown-box {
-            background: var(--beige);
-            border: 1px solid var(--gold);
-            border-radius: 10px;
-            padding: 10px;
-            width: 65px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        .countdown-box span {
-            display: block;
-            font-family: var(--font-heading);
-            font-size: 1.5rem;
-            color: var(--burgundy);
-            font-weight: bold;
-        }
-        .countdown-box label {
-            font-size: 0.7rem;
-            color: var(--dark-brown);
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #FFCC00;
+            background: rgba(255, 204, 0, 0.03);
         }
 
-        /* === COUPLE SECTION === */
-        .couple-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid var(--gold);
-            margin: 0 auto 15px;
-            object-fit: cover;
-            padding: 3px;
-        }
-        .ampersand {
-            font-size: 4rem;
-            line-height: 1;
-            margin: -20px 0;
-            z-index: 2;
-            position: relative;
-        }
-
-        /* === EVENT SECTION === */
-        .icon-gold {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        /* === STORY SECTION === */
-        .timeline {
-            position: relative;
-            max-width: 100%;
-            margin: 20px auto;
-            text-align: left;
-        }
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: var(--gold);
-            top: 0; bottom: 0; left: 15px;
-            margin-left: -1px;
-        }
-        .timeline-item {
-            padding: 10px 0 20px 40px;
-            position: relative;
-        }
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            right: auto;
-            left: 9px;
-            background-color: var(--cream);
-            border: 3px solid var(--maroon);
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        /* === GALLERY SECTION === */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .gallery-item {
-            border-radius: 10px;
-            overflow: hidden;
-            border: 2px solid var(--beige);
-        }
-        .gallery-item img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s;
-        }
-        .gallery-item img:active {
-            transform: scale(1.05);
-        }
-
-        /* === FORM & RSVP === */
-        .form-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-        .form-group label {
-            display: block;
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-            color: var(--burgundy);
-            font-weight: 500;
-        }
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid var(--gold);
-            border-radius: 8px;
-            background: var(--cream);
-            font-family: var(--font-body);
-            font-size: 0.9rem;
-            color: var(--dark-brown);
-        }
-        .form-control:focus {
-            outline: none;
-            border-color: var(--maroon);
-            box-shadow: 0 0 5px rgba(122, 46, 58, 0.2);
-        }
-
-        /* === GIFT SECTION === */
-        .rekening-box {
-            background: linear-gradient(135deg, var(--beige), var(--cream));
-            border: 1px dashed var(--gold);
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 15px;
-        }
-        .btn-copy {
-            background: transparent;
-            border: 1px solid var(--maroon);
-            color: var(--maroon);
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: 0.3s;
-        }
-        .btn-copy:active {
-            background: var(--maroon);
-            color: var(--white);
-        }
-
-        /* === WISHES SECTION === */
-        .wishes-list {
-            max-height: 300px;
-            overflow-y: auto;
-            text-align: left;
-            margin-top: 20px;
-            padding-right: 10px;
-        }
-        .wish-item {
-            background: var(--beige);
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            border-left: 3px solid var(--gold);
-        }
-
-        /* === FOOTER === */
-        footer {
-            background: var(--burgundy);
-            color: var(--cream);
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .footer-logo {
-            width: 80px;
-            margin-bottom: 10px;
-        }
-
-        /* === FLOATING MUSIC BUTTON === */
-        #music-control {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 45px;
-            height: 45px;
-            background: var(--maroon);
-            border: 2px solid var(--gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gold);
-            font-size: 1.2rem;
-            cursor: pointer;
-            z-index: 99;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            animation: spin 4s linear infinite;
-            display: none; /* hidden initially */
-        }
-        #music-control.paused {
-            animation: none;
-            background: var(--dark-brown);
-        }
-        @keyframes spin { 100% { transform: rotate(360deg); } }
-
-        /* === ANIMATIONS (AOS Custom) === */
-        .fade-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .fade-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Custom Styling for missing images (fallback) */
-        img { background-color: var(--beige); }
-
+        img { transition: transform 0.5s ease, opacity 0.3s ease; }
     </style>
 </head>
-<body>
+<body class="bg-dark text-white overflow-x-hidden">
 
-<div id="app-container">
+    <!-- Navigasi / Menu Atas -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="logo-atas.jpg" alt="WR Business Creative" class="h-12 md:h-16 w-auto object-contain">
+            </a>
 
-    <!-- FLOATING MUSIC CONTROLS -->
-    <button id="music-control" onclick="toggleMusic()">♪</button>
-    <audio id="weddingMusic" loop>
-        <source src="Anisa Rahma & Anandito - Pernikahan Impian Official Music Video.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- 1. OPENING COVER -->
-    <div id="cover-screen">
-        <div class="floral-corner floral-top-left"></div>
-        <div class="floral-corner floral-bottom-right"></div>
-        
-        <div class="cover-content">
-            <h3 class="heading-font text-gold" style="font-size: 1.2rem; margin-bottom: 10px;">The Wedding of</h3>
-            <h1 class="script-font text-maroon" style="font-size: 3.5rem; margin-bottom: 10px;">Wily & Ayu</h1>
-            <p class="text-sm">Selasa, 28 November 2017</p>
-            
-            <div class="guest-box">
-                <p class="text-xs" style="margin-bottom: 5px;">Kepada Yth.</p>
-                <p class="text-sm">Bapak/Ibu/Saudara/i</p>
-                <h2 id="guest-name" class="heading-font" style="font-size: 1.3rem; margin-top: 5px;">Nama Tamu</h2>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="#tentang" class="text-sm font-semibold text-zinc-300 hover:text-yellow-400 transition-colors">Tentang</a>
+                <a href="#layanan" class="text-sm font-semibold text-zinc-300 hover:text-yellow-400 transition-colors">Layanan</a>
+                <a href="#paket" class="text-sm font-semibold text-zinc-300 hover:text-yellow-400 transition-colors">Harga</a>
+                <a href="#portfolio" class="text-sm font-semibold text-zinc-300 hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="https://wa.me/6289673769965" target="_blank" class="bg-yellow px-8 py-3 rounded-full text-black font-extrabold text-sm hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,204,0,0.2)]">Hubungi Kami</a>
             </div>
-            
-            <button class="btn-primary" onclick="openInvitation()">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                Buka Undangan
+
+            <button class="md:hidden p-2" onclick="toggleMenu()">
+                <i data-lucide="menu" class="w-8 h-8 text-white"></i>
             </button>
         </div>
-    </div>
-
-    <!-- MAIN CONTENT SCROLLABLE AREA -->
-    <div id="main-content">
         
-        <!-- 2. HERO SECTION -->
-        <section id="hero" style="min-height: 100vh; padding-top: 80px;">
-            <div class="floral-corner floral-top-left" style="opacity: 0.5;"></div>
-            
-            <div class="fade-up">
-                <p class="text-sm text-gold" style="letter-spacing: 2px;">THE WEDDING OF</p>
-                <h1 class="script-font text-maroon" style="font-size: 4rem; margin: 10px 0;">Wily & Ayu</h1>
-            </div>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-black/98 border-b border-zinc-800 py-10 flex flex-col items-center gap-6 md:hidden shadow-2xl">
+            <a href="#tentang" onclick="toggleMenu()" class="text-xl font-bold">Tentang Kami</a>
+            <a href="#layanan" onclick="toggleMenu()" class="text-xl font-bold">Layanan</a>
+            <a href="#paket" onclick="toggleMenu()" class="text-xl font-bold">Harga</a>
+            <a href="https://wa.me/6289673769965" target="_blank" class="bg-yellow text-black px-14 py-4 rounded-full font-black text-lg mt-4">Hubungi Kami</a>
+        </div>
+    </nav>
 
-            <div class="hero-img-frame fade-up" style="transition-delay: 0.2s;">
-                <img src="foto-couple.jpeg" alt="Wily & Ayu" onerror="this.src='https://placehold.co/400x600/EFE1D0/7A2E3A?text=Couple+Photo'">
-            </div>
-
-            <div class="fade-up" style="transition-delay: 0.4s;">
-                <p class="heading-font text-maroon" style="font-size: 1.2rem;">Selasa, 28 November 2017</p>
-                
-                <div class="countdown-container" id="countdown">
-                    <div class="countdown-box">
-                        <span id="days">00</span>
-                        <label>Hari</label>
-                    </div>
-                    <div class="countdown-box">
-                        <span id="hours">00</span>
-                        <label>Jam</label>
-                    </div>
-                    <div class="countdown-box">
-                        <span id="mins">00</span>
-                        <label>Menit</label>
-                    </div>
-                    <div class="countdown-box">
-                        <span id="secs">00</span>
-                        <label>Detik</label>
-                    </div>
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-40 pb-20 md:pt-60 md:pb-40 px-6">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-400/5 rounded-full blur-[150px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-yellow-400/20 bg-yellow-400/5 mb-10">
+                    <span class="w-2.5 h-2.5 rounded-full bg-yellow-400 animate-ping"></span>
+                    <span class="text-yellow-400 text-xs font-black tracking-widest uppercase">Creative Business Partner for UMKM</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- 3. OPENING MESSAGE -->
-        <section id="opening" style="background: var(--beige);">
-            <div class="card fade-up">
-                <h3 class="heading-font text-maroon" style="margin-bottom: 15px;">Assalamu'alaikum Warahmatullahi Wabarakatuh</h3>
-                <p class="text-sm" style="line-height: 1.6; margin-bottom: 20px;">
-                    Dengan memohon rahmat dan ridha Allah Subhanahu Wa Ta'ala, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami.
+                <h1 class="text-6xl md:text-8xl font-black leading-[1] mb-8 tracking-tighter">
+                    Solusi Kreatif untuk <br>
+                    <span class="text-yellow-400 italic">Bisnis Naik Level</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-zinc-400 mb-12 leading-relaxed max-w-2xl">
+                    Membantu UMKM tampil lebih profesional, dikenal luas, dan bertumbuh melalui desain strategis, landing page, dan sistem bisnis sederhana.
                 </p>
-                <div style="font-size: 2rem; color: var(--gold); opacity: 0.3;">"</div>
-                <p class="text-sm font-heading" style="font-style: italic; color: var(--burgundy);">
-                    "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya..."
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="https://wa.me/6289673769965" target="_blank" class="flex items-center justify-center gap-3 bg-yellow text-black px-12 py-5 rounded-full font-black text-xl hover:bg-yellow-500 transition-all shadow-2xl">
+                        Konsultasi Gratis <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </a>
+                    <a href="#paket" class="flex items-center justify-center gap-3 border border-zinc-800 px-12 py-5 rounded-full font-black text-xl hover:border-yellow-400 hover:text-yellow-400 transition-all">
+                        Lihat Paket
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-32 bg-zinc-900/10 px-6 border-y border-zinc-900">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">Tentang <br><span class="text-yellow-400">WR Business Creative</span></h2>
+                <p class="text-zinc-400 text-xl leading-relaxed mb-10">
+                    Kami adalah mitra kreatif bagi pelaku UMKM yang ingin bertransformasi. Kami tidak hanya membuat desain yang bagus, tapi menciptakan identitas visual yang mampu meningkatkan nilai jual produk Anda.
                 </p>
-                <p class="text-xs text-gold" style="margin-top: 10px; font-weight: bold;">(QS. Ar-Rum: 21)</p>
-            </div>
-        </section>
-
-        <!-- 4. BRIDE & GROOM SECTION -->
-        <section id="couple">
-            <h2 class="heading-font text-maroon fade-up" style="font-size: 2rem; margin-bottom: 30px;">Mempelai</h2>
-            
-            <div class="card fade-up">
-                <img src="foto-wily.jpg" alt="Groom" class="couple-photo" onerror="this.src='https://placehold.co/200x200/EFE1D0/7A2E3A?text=Wily'">
-                <h3 class="script-font text-maroon" style="font-size: 2.5rem;">Wilyanto Ramadhan</h3>
-                <p class="text-xs" style="margin-top: 10px;">Putra dari<br>Bapak Suwarmo & Ibu Winda Sholihat M</p>
-            </div>
-
-            <div class="ampersand script-font fade-up">&</div>
-
-            <div class="card fade-up">
-                <img src="foto-ayu.jpg" alt="Bride" class="couple-photo" onerror="this.src='https://placehold.co/200x200/EFE1D0/7A2E3A?text=Ayu'">
-                <h3 class="script-font text-maroon" style="font-size: 2.5rem;">R Ayu Annisa Fauziyah</h3>
-                <p class="text-xs" style="margin-top: 10px;">Putri dari<br>Bapak Abdullah & Ibu Mumun Maemunah</p>
-            </div>
-        </section>
-
-        <!-- 5. EVENT DETAIL SECTION -->
-        <section id="event" style="background: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Ccircle cx=\'2\' cy=\'2\' r=\'1\' fill=\'%23C9A24A\' fill-opacity=\'0.2\'/%3E%3C/svg%3E');">
-            <h2 class="heading-font text-maroon fade-up" style="font-size: 2rem; margin-bottom: 30px;">Detail Acara</h2>
-
-            <div class="card fade-up">
-                <div class="icon-gold">💍</div>
-                <h3 class="heading-font text-maroon" style="font-size: 1.5rem; margin-bottom: 10px;">Akad Nikah</h3>
-                <p class="text-sm font-heading" style="font-weight: bold;">Selasa, 03 Oktober 2017</p>
-                <p class="text-sm text-gold" style="margin-bottom: 10px;">19.30 WIB - Selesai</p>
-                <p class="text-sm"><strong>Masjid An-Najah Purwakarta</strong></p>
-                
-                <button class="btn-primary" style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px;" onclick="window.open('https://maps.google.com', '_blank')">
-                    📍 Lihat Lokasi
-                </button>
-            </div>
-
-            <div class="card fade-up">
-                <div class="icon-gold">🥂</div>
-                <h3 class="heading-font text-maroon" style="font-size: 1.5rem; margin-bottom: 10px;">Resepsi Pernikahan</h3>
-                <p class="text-sm font-heading" style="font-weight: bold;">Selasa, 28 November 2017</p>
-                <p class="text-sm text-gold" style="margin-bottom: 10px;">11.00 - 15.00 WIB</p>
-                <p class="text-sm"><strong>Masjid An-Najah Purwakarta</strong><br>Jl Purnawarman Barat RT/RW 016/003 Kel Sindangkasih Kec/Kab Purwakarta</p>
-                
-                <button class="btn-primary" style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px;" onclick="window.open('https://maps.google.com', '_blank')">
-                    📍 Lihat Lokasi
-                </button>
-            </div>
-        </section>
-
-        <!-- 6. LOVE STORY SECTION -->
-        <section id="story">
-            <h2 class="heading-font text-maroon fade-up" style="font-size: 2rem; margin-bottom: 20px;">Kisah Kami</h2>
-            
-            <div class="timeline fade-up">
-                <div class="timeline-item">
-                    <h4 class="text-maroon font-heading">2017 — Awal Bertemu</h4>
-                    <p class="text-xs" style="margin-top: 5px;">Kami pertama kali bertemu dalam sebuah kegiatan kajian kampus. Saat itu, tidak ada yang menyangka bahwa pertemuan sederhana itu menjadi awal dari perjalanan panjang kami.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4 class="text-maroon font-heading">2017 — Saling Mengenal</h4>
-                    <p class="text-xs" style="margin-top: 5px;">Setelah beberapa tahun berjalan, komunikasi kami kembali terhubung melalui keluarga. Dari sana, kami mulai saling mengenal dengan niat yang lebih serius.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4 class="text-maroon font-heading">2017 — Menuju Pernikahan</h4>
-                    <p class="text-xs" style="margin-top: 5px;">Dengan izin Allah dan restu kedua keluarga, kami memutuskan untuk melangkah ke jenjang pernikahan. Semoga langkah ini menjadi awal ibadah panjang yang penuh keberkahan.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. GALLERY SECTION -->
-        <section id="gallery" style="background: var(--beige);">
-            <h2 class="heading-font text-maroon fade-up" style="font-size: 2rem; margin-bottom: 20px;">Galeri Momen</h2>
-            
-            <div class="gallery-grid fade-up">
-                <div class="gallery-item"><img src="foto-1.jpg" onerror="this.src='https://placehold.co/300x400/C9A24A/FFF?text=Foto+1'" alt="Gallery 1"></div>
-                <div class="gallery-item"><img src="foto-2.jpg" onerror="this.src='https://placehold.co/300x400/7A2E3A/FFF?text=Foto+2'" alt="Gallery 2"></div>
-                <div class="gallery-item"><img src="foto-3.jpg" onerror="this.src='https://placehold.co/300x400/5A1F2D/FFF?text=Foto+3'" alt="Gallery 3"></div>
-                <div class="gallery-item"><img src="foto-4.jpg" onerror="this.src='https://placehold.co/300x400/C9A24A/FFF?text=Foto+4'" alt="Gallery 4"></div>
-                <div class="gallery-item"><img src="foto-5.jpg" onerror="this.src='https://placehold.co/300x400/7A2E3A/FFF?text=Foto+5'" alt="Gallery 5"></div>
-                <div class="gallery-item"><img src="foto-6.jpg" onerror="this.src='https://placehold.co/300x400/5A1F2D/FFF?text=Foto+6'" alt="Gallery 6"></div>
-            </div>
-        </section>
-
-        <!-- 8. RSVP SECTION -->
-        <section id="rsvp">
-            <h2 class="heading-font text-maroon fade-up" style="font-size: 2rem; margin-bottom: 10px;">RSVP</h2>
-            <p class="text-sm fade-up" style="margin-bottom: 20px;">Konfirmasi kehadiran Anda merupakan kehormatan bagi kami.</p>
-            
-            <div class="card fade-up">
-                <div class="form-group">
-                    <label>Nama Lengkap</label>
-                    <input type="text" id="rsvp-name" class="form-control" placeholder="Masukkan nama Anda">
-                </div>
-                <div class="form-group">
-                    <label>Kehadiran</label>
-                    <select id="rsvp-status" class="form-control">
-                        <option value="Hadir">Hadir</option>
-                        <option value="Tidak Hadir">Maaf, Tidak Bisa Hadir</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Jumlah Tamu</label>
-                    <select id="rsvp-count" class="form-control">
-                        <option value="1">1 Orang</option>
-                        <option value="2">2 Orang</option>
-                    </select>
-                </div>
-                <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="sendRSVP()">Kirim Konfirmasi Via WA</button>
-            </div>
-        </section>
-
-        <!-- 9. AMPLOP DIGITAL SECTION -->
-        <section id="gift" style="background: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Ccircle cx=\'2\' cy=\'2\' r=\'1\' fill=\'%23C9A24A\' fill-opacity=\'0.2\'/%3E%3C/svg%3E');">
-            <h2 class="heading-font text-maroon fade-up" style="font-size: 2rem; margin-bottom: 10px;">Wedding Gift</h2>
-            <p class="text-sm fade-up" style="margin-bottom: 20px;">Doa restu Anda adalah karunia yang sangat berarti bagi kami. Namun, jika Anda ingin memberikan tanda kasih, dapat melalui:</p>
-            
-            <div class="card fade-up">
-                <div class="rekening-box">
-                    <h3 class="text-burgundy" style="margin-bottom: 5px;">Bank BCA</h3>
-                    <p class="text-maroon font-heading" style="font-size: 1.2rem; font-weight: bold; letter-spacing: 2px;" id="rek-bca">1234567890</p>
-                    <p class="text-xs">a.n Wilyanto Ramadhan</p>
-                    <button class="btn-copy" onclick="copyText('rek-bca', this)">Salin Nomor Rekening</button>
-                </div>
-                
-                <div class="rekening-box">
-                    <h3 class="text-burgundy" style="margin-bottom: 5px;">E-Wallet (Dana/OVO/GoPay)</h3>
-                    <p class="text-maroon font-heading" style="font-size: 1.2rem; font-weight: bold; letter-spacing: 2px;" id="rek-ewallet">089673769965</p>
-                    <p class="text-xs">a.n Wilyanto Ramadhan</p>
-                    <button class="btn-copy" onclick="copyText('rek-ewallet', this)">Salin Nomor E-Wallet</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- 10. UCAPAN & DOA SECTION -->
-        <section id="wishes" style="background: var(--beige);">
-            <h2 class="heading-font text-maroon fade-up" style="font-size: 2rem; margin-bottom: 20px;">Ucapan & Doa</h2>
-            
-            <div class="card fade-up">
-                <div class="form-group">
-                    <input type="text" id="wish-name" class="form-control" placeholder="Nama Anda" style="margin-bottom: 10px;">
-                    <textarea id="wish-msg" class="form-control" rows="3" placeholder="Tulis ucapan dan doa restu..."></textarea>
-                </div>
-                <button class="btn-primary" style="font-size: 0.8rem; padding: 8px 20px;" onclick="sendWish()">Kirim Ucapan</button>
-                
-                <div class="wishes-list" style="margin-top: 30px;">
-                    <div class="wish-item">
-                        <h4 class="text-maroon text-sm">Budi & Keluarga</h4>
-                        <p class="text-xs text-dark">Selamat menempuh hidup baru Wily & Ayu. Semoga menjadi keluarga yang sakinah mawaddah warahmah. Amin.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                    <div class="p-8 bg-zinc-950 rounded-3xl border border-zinc-800 flex flex-col items-center text-center">
+                        <i data-lucide="zap" class="w-10 h-10 text-yellow-400 mb-4"></i>
+                        <div class="font-black text-lg">Kreatif</div>
                     </div>
-                    <div class="wish-item">
-                        <h4 class="text-maroon text-sm">Siska</h4>
-                        <p class="text-xs text-dark">Happy wedding Ayu!! Semoga lancar sampai hari H dan bahagia selalu ya.</p>
+                    <div class="p-8 bg-zinc-950 rounded-3xl border border-zinc-800 flex flex-col items-center text-center">
+                        <i data-lucide="target" class="w-10 h-10 text-yellow-400 mb-4"></i>
+                        <div class="font-black text-lg">Strategis</div>
+                    </div>
+                    <div class="p-8 bg-zinc-950 rounded-3xl border border-zinc-800 flex flex-col items-center text-center">
+                        <i data-lucide="trending-up" class="w-10 h-10 text-yellow-400 mb-4"></i>
+                        <div class="font-black text-lg">Berdampak</div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- 11. SHARE INVITATION & CLOSING -->
-        <section id="closing">
-            <h2 class="script-font text-maroon fade-up" style="font-size: 3rem; margin-bottom: 10px;">Terima Kasih</h2>
-            <p class="text-sm fade-up" style="margin-bottom: 30px;">Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
-            
-            <div class="fade-up">
-                <p class="heading-font text-burgundy" style="font-weight: bold;">Kami yang berbahagia,</p>
-                <h3 class="script-font text-gold" style="font-size: 2.5rem; margin-top: 5px;">Wily & Ayu</h3>
+            <div class="flex justify-center items-center relative order-1 lg:order-2">
+                <div class="absolute inset-0 bg-yellow-400/5 blur-[120px] rounded-full"></div>
+                <img src="logo-atas.jpg" alt="Logo WR" class="relative z-10 w-full max-w-sm h-auto animate-float drop-shadow-[0_0_50px_rgba(255,204,0,0.15)] rounded-2xl">
             </div>
+        </div>
+    </section>
 
-            <button class="btn-primary fade-up" style="margin-top: 40px;" onclick="shareInvitation()">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                Bagikan Undangan
-            </button>
-        </section>
+    <!-- Layanan -->
+    <section id="layanan" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-20">Layanan Kami</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="service-card p-10 bg-zinc-900 border border-zinc-800 rounded-[2.5rem] transition-all group">
+                    <div class="w-16 h-16 bg-yellow-400/10 text-yellow-400 rounded-3xl flex items-center justify-center mb-8 mx-auto group-hover:bg-yellow-400 group-hover:text-black transition-all">
+                        <i data-lucide="pen-tool"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Branding Identity</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">Membangun identitas visual yang kuat dan profesional.</p>
+                </div>
+                <div class="service-card p-10 bg-zinc-900 border border-zinc-800 rounded-[2.5rem] transition-all group">
+                    <div class="w-16 h-16 bg-yellow-400/10 text-yellow-400 rounded-3xl flex items-center justify-center mb-8 mx-auto group-hover:bg-yellow-400 group-hover:text-black transition-all">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Social Media</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">Konten visual menarik untuk pertumbuhan audiens Anda.</p>
+                </div>
+                <div class="service-card p-10 bg-zinc-900 border border-zinc-800 rounded-[2.5rem] transition-all group">
+                    <div class="w-16 h-16 bg-yellow-400/10 text-yellow-400 rounded-3xl flex items-center justify-center mb-8 mx-auto group-hover:bg-yellow-400 group-hover:text-black transition-all">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Landing Page</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">Website satu halaman yang fokus pada konversi penjualan.</p>
+                </div>
+                <div class="service-card p-10 bg-zinc-900 border border-zinc-800 rounded-[2.5rem] transition-all group">
+                    <div class="w-16 h-16 bg-yellow-400/10 text-yellow-400 rounded-3xl flex items-center justify-center mb-8 mx-auto group-hover:bg-yellow-400 group-hover:text-black transition-all">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AI Support</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">Implementasi teknologi AI untuk efisiensi bisnis UMKM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- 12. FOOTER WRBC -->
-        <footer>
-            <img src="logo-wrbc.png" alt="WRBC Logo" class="footer-logo" onerror="this.src='https://placehold.co/100x40/5A1F2D/FFF?text=WRBC'">
-            <p class="text-xs" style="margin-bottom: 5px;">Made with love by</p>
-            <p class="text-sm font-heading" style="font-weight: bold;">WRBC Digital Invitation</p>
-            <p class="text-xs" style="opacity: 0.8; margin-bottom: 10px;">by WR Business Creative</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-32 bg-zinc-950 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-black text-center mb-24 leading-none tracking-tighter">Portfolio Project</h2>
             
-            <p class="text-xs">
-                <a href="https://wa.me/6289673769965" style="color: var(--gold); text-decoration: none;">WhatsApp: 0896-7376-9965</a><br>
-                <a href="#" style="color: var(--gold); text-decoration: none;">Instagram: @wrbisniskreatif</a>
-            </p>
-        </footer>
+            <div class="space-y-16">
+                <!-- 1. Portfolio WRBC Official Landing Page -->
+                <div class="bg-zinc-900 rounded-[3.5rem] overflow-hidden grid lg:grid-cols-2 border border-zinc-800 transform hover:scale-[1.01] transition-all duration-500 shadow-2xl">
+                    <div class="bg-gradient-to-br from-zinc-800 to-black p-12 flex items-center justify-center relative overflow-hidden group">
+                        <img src="logo-atas.jpg" alt="Preview Web WRBC" class="relative z-10 w-full max-w-xs h-auto drop-shadow-[0_30px_60px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-10 right-10 bg-yellow text-black px-4 py-2 rounded-xl font-black text-xs shadow-xl transform rotate-3 tracking-widest uppercase">Self Project</div>
+                    </div>
+                    <div class="p-16 lg:p-20 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="w-12 h-1 bg-yellow-400 rounded-full"></span>
+                            <span class="text-yellow-400 font-black text-sm uppercase tracking-widest">Digital Showcase</span>
+                        </div>
+                        <h3 class="text-4xl md:text-5xl font-black mb-6 leading-tight tracking-tighter">WR Business Creative <br>Official Landing Page</h3>
+                        <p class="text-zinc-400 text-lg mb-10 leading-relaxed">Perancangan landing page resmi untuk menunjukkan standar visual dan teknis kami kepada calon klien UMKM.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-6 py-2 bg-yellow/10 text-yellow rounded-xl text-xs font-black border border-yellow/20 uppercase tracking-widest">UI/UX</span>
+                            <span class="px-6 py-2 bg-yellow/10 text-yellow rounded-xl text-xs font-black border border-yellow/20 uppercase tracking-widest">Development</span>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
-</div>
+                <!-- 2. Portfolio Wills Indonesia (DENGAN KOTAK IMMERSIVE & GALLERY DESAIN) -->
+                <div class="relative group overflow-hidden rounded-[3.5rem] shadow-2xl border border-zinc-800 transform hover:scale-[1.01] transition-all duration-500">
+                    <div class="absolute inset-0 bg-[#8B0000] z-0"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent z-10"></div>
+                    
+                    <div class="relative z-20">
+                        <!-- Top Part: Content & Circular Logo -->
+                        <div class="grid lg:grid-cols-2 items-center">
+                            <div class="p-12 lg:p-20 flex flex-col justify-center text-white">
+                                <div class="flex items-center gap-3 mb-8">
+                                    <span class="w-12 h-1 bg-red-500 rounded-full shadow-[0_0_10px_rgba(255,255,255,0.3)]"></span>
+                                    <span class="text-red-300 font-black text-sm uppercase tracking-[0.2em]">Client Success Story</span>
+                                </div>
+                                <h3 class="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tighter italic">WILLS <br>INDONESIA</h3>
+                                <p class="text-red-50/80 text-xl md:text-2xl mb-12 leading-relaxed max-w-lg">
+                                    Membangun identitas digital yang berkarakter untuk brand kopi lokal di Purwakarta. Fokus pada kurasi konten visual yang konsisten dan strategis.
+                                </p>
+                                
+                                <div class="flex flex-wrap gap-4 items-center">
+                                    <a href="https://bit.ly/PesanWillsCoffe" target="_blank" class="flex items-center gap-3 bg-white text-[#8B0000] px-12 py-5 rounded-[1.5rem] font-black text-2xl hover:scale-105 transition-all shadow-2xl">
+                                        Lihat Project <i data-lucide="external-link" class="w-7 h-7"></i>
+                                    </a>
+                                </div>
+                            </div>
 
-<script>
-    // --- 1. GET GUEST NAME FROM URL ---
-    document.addEventListener("DOMContentLoaded", function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const guestName = urlParams.get('to');
-        const guestNameEl = document.getElementById('guest-name');
-        
-        if (guestName) {
-            guestNameEl.innerText = decodeURIComponent(guestName);
-        } else {
-            guestNameEl.innerText = 'Bapak/Ibu/Saudara/i';
-        }
-    });
+                            <div class="p-12 flex items-center justify-center lg:justify-end lg:pr-24">
+                                <!-- Logo Wills Bulat Sempurna -->
+                                <div class="w-64 h-64 md:w-80 md:h-80 bg-white rounded-full flex items-center justify-center shadow-[0_0_100px_rgba(255,255,255,0.3)] overflow-hidden p-8 border-8 border-white/20 animate-float">
+                                    <img src="image_c00d76.jpg" alt="Logo Bulat Wills" class="w-full h-full object-cover rounded-full shadow-inner">
+                                </div>
+                            </div>
+                        </div>
 
-    // --- 2. OPEN INVITATION LOGIC ---
-    const music = document.getElementById('weddingMusic');
-    const musicBtn = document.getElementById('music-control');
-    let isMusicPlaying = false;
+                        <!-- Bottom Part: Gallery Showcase (Hasil Desain Kamu - Tidak Ada Duplikasi) -->
+                        <div class="px-12 lg:px-20 pb-20 mt-10">
+                            <div class="flex items-center gap-4 mb-10">
+                                <div class="p-3 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
+                                    <i data-lucide="layout-grid" class="text-white w-6 h-6"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-white font-black text-xl tracking-tight leading-none uppercase">Gallery Desain</span>
+                                    <span class="text-red-200/60 text-sm font-bold tracking-widest uppercase text-center">Visual Content Production</span>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                                <!-- Design 1 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.27.jpeg" alt="Desain Wills 1" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Product Catalog</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Coffee Bottles</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Design 2 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.26.jpeg" alt="Desain Wills 2" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Social Feed</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Latte Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Design 3 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.25.jpeg" alt="Desain Wills 3" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Promotion Content</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Daily Coffee</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Design 4 -->
+                                <div class="group/item relative aspect-[3/4] bg-zinc-950 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-xl hover:border-white/40 transition-all">
+                                    <img src="WhatsApp Image 2026-05-06 at 06.08.47.jpeg" alt="Desain Wills 4" class="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-8">
+                                        <div class="flex flex-col">
+                                            <span class="text-white font-black text-lg">Menu Highlights</span>
+                                            <span class="text-red-400 text-xs font-bold uppercase tracking-widest">Product Shot</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    function openInvitation() {
-        // Hide cover
-        const cover = document.getElementById('cover-screen');
-        cover.classList.add('hidden');
-        
-        // Show content
-        const content = document.getElementById('main-content');
-        content.style.display = 'block';
-        
-        // Play music
-        playMusic();
-        
-        // Init Scroll Animation
-        initScrollAnimation();
-        
-        // Scroll to top of content
-        content.scrollTop = 0;
-    }
+            </div>
+        </div>
+    </section>
 
-    function playMusic() {
-        music.play().then(() => {
-            isMusicPlaying = true;
-            musicBtn.style.display = 'flex';
-            musicBtn.classList.remove('paused');
-        }).catch((error) => {
-            console.log("Auto-play prevented by browser. User must interact first.");
-            musicBtn.style.display = 'flex';
-            musicBtn.classList.add('paused');
+    <!-- Paket Harga -->
+    <section id="paket" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-24 leading-none tracking-tighter">Paket Harga</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Paket Starter -->
+                <div class="p-12 bg-zinc-900 border border-zinc-800 rounded-[3rem] flex flex-col text-left hover:border-zinc-500 transition-all">
+                    <h3 class="text-2xl font-black mb-4">Starter</h3>
+                    <div class="text-5xl font-black text-yellow-400 mb-10 leading-none">Rp350rb</div>
+                    <ul class="space-y-5 text-zinc-400 flex-grow mb-12 text-base">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Logo AI + Finishing</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> 3 Desain Feed Instagram</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Warna Brand Basic</li>
+                    </ul>
+                    <a href="https://wa.me/6289673769965" class="w-full py-5 border-2 border-zinc-800 rounded-2xl text-center font-black text-xl hover:bg-zinc-800 transition-all">Ambil Paket</a>
+                </div>
+                
+                <!-- Paket Branding (Best Seller) -->
+                <div class="p-12 bg-zinc-900 border-4 border-yellow-400 rounded-[3.5rem] flex flex-col text-left relative scale-105 shadow-2xl">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-yellow text-black text-xs font-black px-6 py-2 rounded-full uppercase tracking-widest shadow-xl text-center">Terlaris</div>
+                    <h3 class="text-2xl font-black mb-4">Branding</h3>
+                    <div class="text-5xl font-black text-yellow-400 mb-10 leading-none">Rp1.5jt</div>
+                    <ul class="space-y-5 text-zinc-200 flex-grow mb-12 text-base">
+                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Landing Page Bisnis</li>
+                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> 12 Desain Feed Premium</li>
+                        <li class="flex items-center gap-3 font-bold"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Refresh Logo Pro</li>
+                    </ul>
+                    <a href="https://wa.me/6289673769965" class="w-full py-5 bg-yellow text-black rounded-[2rem] text-center font-black text-2xl hover:scale-105 transition-all">Ambil Paket</a>
+                </div>
+                
+                <!-- Paket Pro -->
+                <div class="p-12 bg-zinc-900 border border-zinc-800 rounded-[3rem] flex flex-col text-left hover:border-zinc-500 transition-all">
+                    <h3 class="text-2xl font-black mb-4">Pro Setup</h3>
+                    <div class="text-5xl font-black text-yellow-400 mb-10 leading-none">Rp2.5jt</div>
+                    <ul class="space-y-5 text-zinc-400 flex-grow mb-12 text-base">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Full Business Setup</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> SOP Sederhana</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-yellow-400 w-5 h-5"></i> Konsultasi Bisnis</li>
+                    </ul>
+                    <a href="https://wa.me/6289673769965" class="w-full py-5 border-2 border-zinc-800 rounded-2xl text-center font-black text-xl hover:bg-zinc-800 transition-all">Ambil Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-32 px-6 border-t border-zinc-900 text-center">
+        <div class="max-w-7xl mx-auto">
+            <img src="logo-atas.jpg" alt="WRBC Logo" class="h-20 mx-auto mb-12 object-contain">
+            <p class="text-zinc-400 text-xl max-w-sm mx-auto mb-16 font-medium">Mitra kreatif strategis untuk bisnis UMKM naik level. Desain, Konten, & Digital Presence.</p>
+            <div class="flex justify-center gap-10 mb-20 text-zinc-600">
+                <a href="https://wa.me/6289673769965" class="hover:text-yellow-400 transition-colors"><i data-lucide="phone" class="w-8 h-8"></i></a>
+                <a href="mailto:wrbisniskreatif@gmail.com" class="hover:text-yellow-400 transition-colors"><i data-lucide="mail" class="w-8 h-8"></i></a>
+                <a href="https://instagram.com/wrbisniskreatif" class="hover:text-yellow-400 transition-colors"><i data-lucide="instagram" class="w-8 h-8"></i></a>
+            </div>
+            <p class="text-xs text-zinc-800 font-black tracking-[0.5em] uppercase text-center">&copy; 2026 WR Business Creative.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+        
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) { 
+                nav.classList.add('glass'); 
+                nav.classList.add('py-3');
+                nav.classList.remove('py-5');
+            } else { 
+                nav.classList.remove('glass'); 
+                nav.classList.add('py-5');
+                nav.classList.remove('py-3');
+            }
         });
-    }
-
-    function toggleMusic() {
-        if (isMusicPlaying) {
-            music.pause();
-            musicBtn.classList.add('paused');
-        } else {
-            music.play();
-            musicBtn.classList.remove('paused');
+        
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         }
-        isMusicPlaying = !isMusicPlaying;
-    }
-
-    // --- 3. COUNTDOWN TIMER ---
-    // Target Date: 28 Nov 2017, 11:00:00
-    const countDownDate = new Date("Nov 28, 2017 11:00:00").getTime();
-
-    const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("days").innerHTML = "00";
-            document.getElementById("hours").innerHTML = "00";
-            document.getElementById("mins").innerHTML = "00";
-            document.getElementById("secs").innerHTML = "00";
-            return;
-        }
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
-        document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
-        document.getElementById("mins").innerHTML = minutes < 10 ? "0" + minutes : minutes;
-        document.getElementById("secs").innerHTML = seconds < 10 ? "0" + seconds : seconds;
-    }, 1000);
-
-    // --- 4. SCROLL ANIMATION (AOS Alternative) ---
-    function initScrollAnimation() {
-        const elements = document.querySelectorAll('.fade-up');
-        const scrollContainer = document.getElementById('main-content');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            root: scrollContainer,
-            threshold: 0.1
-        });
-
-        elements.forEach(el => observer.observe(el));
-        
-        // Trigger once for elements already in view
-        setTimeout(() => {
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if(rect.top < window.innerHeight) {
-                    el.classList.add('visible');
-                }
-            });
-        }, 300);
-    }
-
-    // --- 5. COPY TO CLIPBOARD ---
-    function copyText(elementId, btnElement) {
-        const text = document.getElementById(elementId).innerText;
-        
-        // Create temporary textarea
-        const textarea = document.createElement("textarea");
-        textarea.value = text;
-        document.body.appendChild(textarea);
-        textarea.select();
-        
-        try {
-            document.execCommand('copy');
-            const originalText = btnElement.innerText;
-            btnElement.innerText = "Tersalin!";
-            btnElement.style.background = "var(--maroon)";
-            btnElement.style.color = "var(--white)";
-            
-            setTimeout(() => {
-                btnElement.innerText = originalText;
-                btnElement.style.background = "transparent";
-                btnElement.style.color = "var(--maroon)";
-            }, 2000);
-        } catch (err) {
-            alert("Gagal menyalin teks.");
-        }
-        
-        document.body.removeChild(textarea);
-    }
-
-    // --- 6. RSVP TO WHATSAPP ---
-    function sendRSVP() {
-        const name = document.getElementById('rsvp-name').value;
-        const status = document.getElementById('rsvp-status').value;
-        const count = document.getElementById('rsvp-count').value;
-        
-        if(!name) {
-            alert('Mohon isi nama Anda.');
-            return;
-        }
-
-        const phone = "6289673769965";
-        const message = `Assalamu'alaikum, saya ${name} mengkonfirmasi bahwa saya *${status}* pada acara pernikahan Wily & Ayu (${count} Orang). Terima kasih.`;
-        
-        const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-        window.open(waUrl, '_blank');
-    }
-
-    // --- 7. WISH TO WHATSAPP ---
-    function sendWish() {
-        const name = document.getElementById('wish-name').value;
-        const msg = document.getElementById('wish-msg').value;
-        
-        if(!name || !msg) {
-            alert('Mohon isi nama dan ucapan Anda.');
-            return;
-        }
-
-        const phone = "6289673769965";
-        const message = `*Ucapan dari ${name}*\n\n"${msg}"\n\nUntuk pernikahan Wily & Ayu.`;
-        
-        const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-        window.open(waUrl, '_blank');
-        
-        // Add to DOM list locally just for effect
-        const wishesList = document.querySelector('.wishes-list');
-        const newWish = document.createElement('div');
-        newWish.className = 'wish-item';
-        newWish.innerHTML = `<h4 class="text-maroon text-sm">${name}</h4><p class="text-xs text-dark">${msg}</p>`;
-        wishesList.prepend(newWish);
-        
-        document.getElementById('wish-name').value = '';
-        document.getElementById('wish-msg').value = '';
-    }
-
-    // --- 8. SHARE INVITATION ---
-    function shareInvitation() {
-        const currentUrl = window.location.href.split('?')[0]; // get base URL without parameters
-        const message = `Assalamu'alaikum, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan Wily & Ayu. Silakan buka undangan digital berikut:\n\n${currentUrl}`;
-        
-        const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
-        window.open(waUrl, '_blank');
-    }
-
-</script>
-
+    </script>
 </body>
 </html>
